@@ -1,0 +1,112 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #111; /* Dark background for a sleek look */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set full height */
+}
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: #ffcc00; /* Bright yellow for title */
+  margin-bottom: 7px;
+}
+h5{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffcc00; 
+  text-align: center;
+}
+
+
+
+.chat-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow the chat container to grow */
+  justify-content: flex-end; /* Push items to the bottom */
+}
+
+.chat-window {
+  flex-grow: 1; /* Allow the chat window to grow */
+  overflow-y: auto; /* Enable scrolling */
+  padding: 10px;
+  border: 1px solid #ffcc00; /* Bright yellow border */
+  border-radius: 5px;
+  background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent dark background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  display: flex;
+  flex-direction: column-reverse; /* Reverse order for bottom-to-top effect */
+}
+
+@keyframes pop-in {
+  0% {
+      transform: translateY(20px); /* Start slightly below */
+      opacity: 0; /* Start invisible */
+  }
+  100% {
+      transform: translateY(0); /* End in place */
+      opacity: 1; /* End fully visible */
+  }
+}
+
+.message {
+  margin: 5px 0; /* Space between messages */
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%; /* Limit width for better layout */
+  word-wrap: break-word; /* Prevent overflow */
+  animation: pop-in 0.3s ease; /* Apply the animation */
+}
+
+
+.message.user {
+  margin-left:400px;
+  text-align: right;
+  align-self: flex-end; /* Align user messages to the right */
+  background-color: #ffe600;
+  color: #030000;
+}
+
+.message.jarvis {
+  margin-right:400px;
+  text-align: left;
+  align-self: flex-start; /* Align Jarvis messages to the left */
+  background-color: #e9ecef;
+  color: #333;
+}
+
+
+
+form {
+  display: flex;
+  justify-content: center; 
+  margin-top: 10px; 
+}
+
+input[type="text"] {
+  bottom:0;
+  padding: 10px;
+  border: 2px solid #ffcc00; /* Bright yellow border */
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffcc00; /* Bright yellow for button */
+  color: #111; /* Dark text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #e6b800; /* Darker shade on hover */
+}
