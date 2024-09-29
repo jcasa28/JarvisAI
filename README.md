@@ -28,10 +28,19 @@ To get started with **Jarvis AI**, follow these steps:
    ```
 
 You should install the requirements packages under backend directory
-pip install -r requirements.txt
 
-To modify the backjend and run it is under the "backend" directory
+```bash
+  pip install -r requirements.txt
+```
+
+To modify the backend and run it is under the "backend" directory
 
 To modify the front end and run is is under the "frontend" directory
 
 To run both at the same time and test the app, either the backend and the frontend has to be oppened in separate terminals at the same time
+
+If you want to make it work with the OpenAI API get the API from Openai.com, log in with your credentials and get your API key, then create a folder called .env inside the backend folder and create this code:
+
+```bash
+  OPENAI_API_KEY= your key should be pasted here with no quotes, just paste it
+```
