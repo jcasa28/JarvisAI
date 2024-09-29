@@ -1,4 +1,4 @@
-#!/Users/jesuscasasanta/Desktop/Projects/FullStack/backend/venv/bin/python3.12
+#!/Users/jesuscasasanta/Desktop/Projects/JarvisAI/backend/venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
