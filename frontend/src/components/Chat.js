@@ -47,7 +47,7 @@ const Chat = () => {
                     onChange={(e) => setPrompt(e.target.value)}
                     placeholder="Type your prompt"
                 />
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
             </form>
         </div>
     );

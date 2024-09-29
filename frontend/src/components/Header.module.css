@@ -1,11 +1,12 @@
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Fira code' monospace !important;
     text-align: center;
     color: #1e8296; 
     margin-bottom: 7px;
   }
   h5{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Fira code' monospace !important;
+     
     color: #1e8296; 
     margin-bottom: 10px;
     text-align: center;

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Fira Code', monospace !important;
   background-color: #111; 
   margin: 0;
   padding: 0;
@@ -39,6 +39,7 @@ body {
 }
 
 .message {
+  
   margin: 5px 0; 
   padding: 8px 12px;
   border-radius: 10px; 
