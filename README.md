@@ -27,15 +27,46 @@ To get started with **Jarvis AI**, follow these steps:
    cd JarvisAI
    ```
 
-You should install the requirements packages under backend directory
+2. Backend Setup (Python/Flask)
 
-```bash
+The backend of Jarvis AI is built using Python and Flask. To set up and run the backend, follow these steps:
+
+1.1.	Navigate to the Backend Directory:
+•	From the root directory of the project, go into the backend folder:
+   ```bash
+   cd backend
+   ```
+1.2.	Activate Virtual Environment:
+•	On macOS/Linux:
+   ```bash
+   source venv/bin/activate
+   ```
+•  On windows
+   ```bash
+   venv\Scripts\activate
+   ```
+1.3.	Install Dependencies:
+•	Ensure that you install all the necessary Python packages required by the backend. While the virtual environment is active, run:
+   ```bash
   pip install -r requirements.txt
-```
-
-To modify the backend and run it is under the "backend" directory
-
-To modify the front end and run is is under the "frontend" directory
+   ```
+•	The backend server will be running at http://localhost:5000.
+   
+3.	Frontend Setup (React)
+The frontend of Jarvis AI is built using React.js and can be found in the frontend directory. To set up and run the frontend, follow these steps:
+•	First, navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+•	Install the necessary dependencies using npm:
+   ```bash
+   npm install
+   ```
+•	Start the React development server:
+   ```bash
+   npm start
+   ```
+The frontend will run on http://localhost:3000, and you can view the interactive chatbot interface in your browser.
 
 To run both at the same time and test the app, either the backend and the frontend has to be oppened in separate terminals at the same time
 
